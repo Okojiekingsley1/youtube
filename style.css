@@ -1,3 +1,13 @@
+html, body {
+  max-width: 100% ! important;
+  overflow-x: hidden ! important;
+  margin: 0;
+  padding: 0; 
+}
+html{
+  scroll-behavior: smooth;
+}
+
 .c-item{
   height: 480px;
 }
@@ -8,4 +18,65 @@
 }
 .btn{
   margin-left: 50px;
+}
+
+/* logo and content */
+.intromain{
+  text-align: center;
+  padding: 40px;
+  height: 400px;
+}
+.leftside{
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  /* border: solid 2px lightgray; */
+  vertical-align: top;
+}
+.leftside img{width: 80%; margin: 10px; height: 260px;}
+
+
+.rightside{
+  display: inline-block;
+  width: 40%;
+  height: 90%;
+  /* border:solid 2px lightgray; */
+  vertical-align: top;
+}
+
+.dtitle{
+  font-size: 25px;
+  font-family: calibri;
+  padding: 10px;
+}
+
+.dlink a{
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.dlink{
+  padding-top: 25px;
+}
+
+@media screen and (max-width:800px){
+  .rightside{
+    width: 90%;
+  }
+  .leftside{
+    width: 90%;
+  }
+  .intromain{
+    text-align: center;
+    padding: 10px;
+    height: 250px;
+  }
+  .leftside img{
+    height: 80%;
+    width: auto;margin: 10px;
+  }
 }
