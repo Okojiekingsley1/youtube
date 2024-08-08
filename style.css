@@ -8,6 +8,188 @@ html{
   scroll-behavior: smooth;
 }
 
+
+
+
+        /* @media (min-width: 992px){
+          .navbar-brand img {
+            width: 100px;
+            height: auto;
+          }
+          .navbar-nav .nav-link {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+          }
+          .navbar-toggler {
+            margin-right: 0;
+          }
+          .form-control {
+            width: 100%;
+          }
+        }
+      
+        @media (max-width: 360px) {
+          .navbar-brand img {
+            width: 80px;
+          }
+          .navbar-nav .nav-link {
+            font-size: 14px;
+          }
+          .btn {
+            padding: 0.375rem 0.5rem;
+            font-size: 14px;
+          }
+        } */
+
+
+
+      
+        /* Adjustments for Samsung S9+ and similar devices */
+        @media (min-width: 360px) and (max-width: 375px) {
+          .navbar-brand img {
+            width: 80px;
+            height: auto;
+          }
+          .navbar-nav .nav-link {
+            font-size: 14px;
+          }
+          .btn {
+            padding: 0.375rem 0.5rem;
+            font-size: 14px;
+          }
+        }
+      
+        /* For smaller devices */
+        @media (max-width: 359px) {
+          .navbar-brand img {
+            width: 70px;
+          }
+          .navbar-nav .nav-link {
+            font-size: 12px;
+          }
+          .btn {
+            padding: 0.3rem 0.4rem;
+            font-size: 12px;
+          }
+        }
+      
+        /* For larger devices */
+        @media (min-width: 376px) {
+          .navbar-brand img {
+            width: 100px;
+            height: auto;
+          }
+          .navbar-nav .nav-link {
+            font-size: 16px;
+          }
+          .btn {
+            padding: 0.5rem 1rem;
+            font-size: 16px;
+          }
+        }
+      
+
+/* body */
+/* Adjustments for Samsung S9+ and similar devices */
+@media (min-width: 360px) and (max-width: 375px) {
+  .carousel-caption {
+    bottom: 20%;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* For smaller devices */
+@media (max-width: 359px) {
+  .carousel-caption {
+    bottom: 15%;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* For larger devices */
+@media (min-width: 376px) {
+  .carousel-caption {
+    bottom: 30%;
+  }
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* cards */
+/* Custom styles for text and button sizes if needed */
+@media (min-width: 360px) and (max-width: 375px) {
+  .card-title {
+    font-size: 1.25rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+
+/* about */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+  .section-title p {
+    font-size: 1rem;
+  }
+  .about-content-body ul li {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
 .c-item{
   height: 480px;
 }

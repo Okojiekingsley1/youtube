@@ -78,7 +78,7 @@ Let me know if you have any questions or need further modifications! -->
         <nav class="navbar navbar-expand-lg bg-dark">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src="asset/serv1.png" class="img-fluid" alt="Brand Logo" width="150" height="90">
+              <img src="asset/serv1.png" class="img-fluid" alt="Brand Logo">
             </a> 
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -138,7 +138,7 @@ Let me know if you have any questions or need further modifications! -->
                   <a class="nav-link active text-white" href="#">Contact Us</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
+              <form class="d-flex mt-2 mt-lg-0" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
@@ -147,9 +147,13 @@ Let me know if you have any questions or need further modifications! -->
         </nav>
       </section>
       
+      
+      
+      
+      
 
   <main>
-    <section>
+    <!-- <section>
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -195,7 +199,57 @@ Let me know if you have any questions or need further modifications! -->
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    </section> -->
+
+
+    <section>
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="asset/engineeered.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption top-0 mt-4 d-none d-md-block d-sm-block">
+              <p class="fs-3 mt-5 text-uppercase">Your One Stop Solution</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Transforming Business With Servercrib.</h1>
+              <button class="btn btn-dark px-4 py-2 fs-5 mt-5" style="background-color: green; border: none;">Book An Appointment</button>
+            </div>
+          </div>
+    
+          <div class="carousel-item c-item">
+            <img src="asset/servers.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption top-0 mt-4 d-none d-md-block d-sm-block">
+              <p class="fs-3 mt-5 text-uppercase">Innovative Solutions</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Providing Cutting Edge Solutions for Your Business</h1>
+              <button class="btn btn-dark px-4 py-2 fs-5 mt-5" style="background-color: green; border: none;">Book An Appointment</button>
+            </div>
+          </div>
+    
+          <div class="carousel-item c-item">
+            <img src="asset/server3.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption top-0 mt-4 d-none d-md-block d-sm-block">
+              <p class="fs-3 mt-5 text-uppercase">Your IT Solution Hub</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Servercrib Technical Solutions</h1>
+              <button class="btn btn-dark px-4 py-2 fs-5 mt-5" style="background-color: green; border: none;">Book An Appointment</button>
+            </div>
+          </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
+    
 
     <!-- <section class="overview ">
       <div class="container h-100 d-flex align-items-center">
@@ -242,94 +296,90 @@ Let me know if you have any questions or need further modifications! -->
 
 
 <!-- cards -->
-    <section id="packages" class="pt-md-5 bg-dark">
-      <div class="text-center my-5 fs-1 fw-bold text-white-50">Services</div>
-    
+<section id="packages" class="pt-md-5 bg-dark">
+  <div class="text-center my-5 fs-1 fw-bold text-white-50">Services</div>
 
-    <div class="container">
+  <div class="container">
     <div class="row">
-      <div class="col-lg">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
           <img src="asset/cloud.jpg" class="card-img-top" style="height: 200px;" alt="...">
           <div class="card-body">
             <h4 class="card-title">Cloud Services</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn" style="color: white; border: none; background-color: green;">View More</a>
+            <a href="#" class="btn btn-success text-white">View More</a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
           <img src="asset/infrastructure.jpg" class="card-img-top" style="height: 200px;" alt="...">
           <div class="card-body">
             <h4 class="card-title">Software Development</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-dark" style="color: white; border: none; background-color: green;">View More</a>
+            <a href="#" class="btn btn-success text-white">View More</a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
           <img src="asset/server1.jpg" class="card-img-top" style="height: 200px;" alt="...">
           <div class="card-body">
             <h4 class="card-title">Data Center</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-dark" style="color: white; border: none; background-color: green;">View More</a>
+            <a href="#" class="btn btn-success text-white">View More</a>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    </section>
+  </div>
+</section>
 
-    <!-- 2nd card -->
-    <section id="packages" class="pt-md-5 bg-dark p-4">
-    
-
-    <div class="container">
+<section id="packages" class="pt-md-5 bg-dark p-4">
+  <div class="container">
     <div class="row">
-      <div class="col-lg">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
           <img src="asset/erp.jpg" class="card-img-top" style="height: 200px;" alt="...">
           <div class="card-body">
             <h4 class="card-title">Enterprise Resource Planning (ERP)</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-light" style="color: white; background-color: green;">View More</a>
+            <a href="#" class="btn btn-success text-white">View More</a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
           <img src="asset/cyber.jpg" class="card-img-top" style="height: 200px;" alt="...">
           <div class="card-body">
             <h4 class="card-title">Cyber Security</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-dark" style="color: white; border: none; background-color: green;">View More</a>
+            <a href="#" class="btn btn-success text-white">View More</a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
           <img src="asset/server10.jpg" class="card-img-top" style="height: 200px;" alt="...">
           <div class="card-body">
             <h4 class="card-title">Server</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-dark" style="color: white; border: none; background-color: green;">View More</a>
+            <a href="#" class="btn btn-success text-white">View More</a>
           </div>
         </div>
       </div>
-       <div class="text-center p-4">
-            <a href="service.html" class="btn btn-light w-60" style="background-color: green; color: white; border: none; padding: 20px;">View Our Services<i class="bi bi-arrow-right-circle mx-2 fs-6"></i></a>
-          </div>
 
+      <div class="text-center p-4">
+        <a href="service.html" class="btn btn-success w-50 text-white">View Our Services <i class="bi bi-arrow-right-circle mx-2 fs-6"></i></a>
+      </div>
     </div>
-    </div>
-    </section>
-    
+  </div>
+</section>
+
 
 
     <div class="col-md-5 text-center" style="margin-left: 30%;">
@@ -356,65 +406,68 @@ Let me know if you have any questions or need further modifications! -->
 </div> -->
 
 
-<div class="about-us bg-dark">
+<div class="about-us bg-dark py-5">
   <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-5">
-              <!-- About Us Image Start -->
-              <div class="about-image">
-                  <div class="about-img">
-                      <figure class="reveal p-3">
-                          <img src="asset/coach1.jpg" style="width: 100%; margin: -40px;" alt="">
-                      </figure>
-                  </div>
-              </div>
-              <!-- About Us Image End -->
+    <div class="row align-items-center">
+      <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+        <!-- About Us Image Start -->
+        <div class="about-image">
+          <div class="about-img">
+            <figure class="reveal p-3">
+              <img src="asset/coach1.jpg" class="img-fluid" alt="About Us Image">
+            </figure>
           </div>
-
-          <div class="col-lg-7">
-              <!-- About Content Start -->
-              <div class="about-content">
-                  <!-- Section Title Start -->
-                  <div class="section-title">
-                      <h3 class="wow fadeInUp fs-6 p-2" style="color: #fff;">About Us</h3>
-                      <h2 class="text-anime-style-3" data-cursor="-opaque" style="color: #fff;">Servercrib Consultancy Services</h2>
-                      <p class="wow fadeInUp" class="fs-5 data-wow-delay="0.25s" style="color: #fff;">Primetek Heavy Industries is a Service Provider
-                          in Onshore/Offshore Oil and Gas facilities for Production, Processing, Storage and Refinery
-                          structures. Primetek also carry out projects in other industrial sectors such as Marine,
-                          Infrastructure and Power.</p>
-                  </div>
-
-                  <!-- About Content Body Start -->
-                  <div class="about-content-body wow fadeInUp" data-wow-delay="0.5s" style="color: #fff;">
-                    <ul>
-                        <li><i class="bi bi-check-circle-fill p-2" style="color: green;"></i>Quality Materials</li>
-                        <li><i class="bi bi-check-circle-fill p-2" style="color: green;"></i>Expert Engineer</li>
-                        <li><i class="bi bi-check-circle-fill p-2" style="color: green;"></i>Quality Maintenance</li>
-                    </ul>
-                </div>
-                <!-- About Content Body End -->
-
-                <!-- About Content Footer Start -->
-                <div class="about-content-footer wow fadeInUp" data-wow-delay="0.75s" style="color: #fff;">
-                    <div class="about-footer-btn">
-                        <a href="/about" class="btn-default" style="color: white; text-decoration: none; padding: 15px; background-color: green; border-radius: 5px;">About Us<i class="bi bi-arrow-right-circle" style="padding-left: 10px;"></i></a>
-                    </div>
-                    <div class="about-contact-support">
-                        <div class="icon-box">
-                            <img src="assets/images/icon-phone.svg" alt="">
-                        </div>
-                        <div class="about-support-content">
-                            <p style="color: grey;">call support center 24X7</p>
-                            <h3 style="color: green;"><i class="bi bi-telephone fs-3 p-2"></i>+234 802 3456 483</h3>
-                        </div> </i>
-                    </div>
-                </div>
-                <!-- About Content Footer End -->
-            </div>
         </div>
+        <!-- About Us Image End -->
+      </div>
+
+      <div class="col-lg-7 col-md-6">
+        <!-- About Content Start -->
+        <div class="about-content">
+          <!-- Section Title Start -->
+          <div class="section-title mb-4">
+            <h3 class="wow fadeInUp fs-6 p-2 text-white">About Us</h3>
+            <h2 class="text-anime-style-3 text-white">Servercrib Consultancy Services</h2>
+            <p class="wow fadeInUp fs-5" data-wow-delay="0.25s" style="color: #fff;">Primetek Heavy Industries is a Service Provider
+              in Onshore/Offshore Oil and Gas facilities for Production, Processing, Storage and Refinery
+              structures. Primetek also carry out projects in other industrial sectors such as Marine,
+              Infrastructure and Power.</p>
+          </div>
+          <!-- Section Title End -->
+
+          <!-- About Content Body Start -->
+          <div class="about-content-body wow fadeInUp mb-4" data-wow-delay="0.5s" style="color: #fff;">
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill p-2 text-success"></i>Quality Materials</li>
+              <li><i class="bi bi-check-circle-fill p-2 text-success"></i>Expert Engineer</li>
+              <li><i class="bi bi-check-circle-fill p-2 text-success"></i>Quality Maintenance</li>
+            </ul>
+          </div>
+          <!-- About Content Body End -->
+
+          <!-- About Content Footer Start -->
+          <div class="about-content-footer wow fadeInUp" data-wow-delay="0.75s" style="color: #fff;">
+            <div class="about-footer-btn mb-4">
+              <a href="/about" class="btn btn-success text-white">About Us <i class="bi bi-arrow-right-circle ms-2"></i></a>
+            </div>
+            <div class="about-contact-support d-flex align-items-center">
+              <div class="icon-box me-3">
+                <img src="assets/images/icon-phone.svg" alt="Phone Icon">
+              </div>
+              <div class="about-support-content">
+                <p class="text-grey">call support center 24X7</p>
+                <h3 class="text-success"><i class="bi bi-telephone fs-3 p-2"></i>+234 802 3456 483</h3>
+              </div>
+            </div>
+          </div>
+          <!-- About Content Footer End -->
+        </div>
+        <!-- About Content End -->
+      </div>
     </div>
+  </div>
 </div>
-</div>
+
 <!-- About Section End -->
 
 
