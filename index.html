@@ -15,6 +15,9 @@
    <link rel="icon" type="asset/icon" href="asset/favicon.ico.png">
 
    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- AOS css -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
 </head>
 <body>
         
@@ -189,7 +192,7 @@
   </div>
 </section>
 
-<section id="packages" class="pt-md-5 bg-dark p-4 fade-in">
+<section id="packages" class="pt-md-5 bg-dark p-4" data-aos="fade-in">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -226,26 +229,40 @@
       </div>
 
       <div class="text-center p-4">
-        <a href="service.html" class="btn btn-success w-50 text-white">View Our Services <i class="bi bi-arrow-right-circle mx-2 fs-6"></i></a>
+        <a href="service.html" class="btn btn-success w-50 text-white" data-aos="fade-up">View Our Services <i class="bi bi-arrow-right-circle mx-2 fs-6"></i></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- service end -->
+<!-- service-why chose us -->
 
 <div class="container py-5">
   <div class="row justify-content-center">
     <div class="col-md-8 text-center">
-      <div class="fs-5 text-uppercase" style="color: green;">Why Choose Us?</div>
-      <div class="fs-1 fw-bold my-3" style="color: green;">Why We Are Your Best Choice</div>
-      <div class="fs-6 px-4 fw-bold text-dark mb-3">
+      <div class="fs-5 text-uppercase" style="color: green;" data-aos="fade-up">Why Choose Us?</div>
+      <div class="fs-1 fw-bold my-3" style="color: green;" data-aos="fade-up" data-aos-delay="200">Why We Are Your Best Choice</div>
+      <div class="fs-6 px-4 fw-bold text-dark mb-3" data-aos="fade-up" data-aos-delay="400">
         Developed in close collaboration with our partners and clients, we combine industry knowledge, decades of experience, ingenuity, and adaptability to deliver excellence to our clients.
       </div>
     </div>
   </div>
 </div>
 
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Initialize AOS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      // You can add custom AOS options here
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // Animation easing
+      once: true // Animation happens only once
+    });
+  });
+</script>
+<!-- why choose us -->
 
       
 <div class="about-us bg-dark py-5">
@@ -557,7 +574,7 @@
           <label for="message">Message</label>
           <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Send Message</button>
+      <button type="submit" class="btn btn-success">Send Message</button>
   </form>
 </div>
 
