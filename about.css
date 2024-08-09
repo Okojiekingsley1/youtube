@@ -1,27 +1,4 @@
-.our-company-history {
-  background-color: #f8f9fa;
-}
 
-.company-history-image .company-experience {
-  transform: translateY(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.company-history-image:hover .company-experience {
-  transform: translateY(-10px);
-}
-
-.company-experience h3 {
-  font-size: 2.5rem;
-  color: #28a745;
-  margin-bottom: 0.5rem;
-}
-
-.company-experience p {
-  font-size: 0.875rem;
-  color: #6c757d;
-  margin-bottom: 0;
-}
 /* what we do */
 .section-title h3 {
   font-size: 1.75rem;
