@@ -1,0 +1,554 @@
+<style>
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+  }
+
+  /* Center website */
+  .main {
+      max-width: 1000px;
+      margin: auto;
+  }
+
+  h1 {
+      font-size: 50px;
+      word-break: break-all;
+  }
+
+  .row {
+      margin: 10px -16px;
+  }
+
+  /* Add padding BETWEEN each column */
+  .row,
+  .row>.column {
+      padding: 8px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 50%;
+      display: none;
+      /* Hide all elements by default */
+  }
+
+  @media only screen and (max-width: 600px) {
+      .column {
+          float: left;
+          width: 100%;
+          display: none;
+          /* Hide all elements by default */
+      }
+  }
+
+  @media only screen and (min-width: 992px) {
+      .column {
+          float: left;
+          width: 25%;
+          display: none;
+          /* Hide all elements by default */
+      }
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* Content */
+  .content {
+      background-color: white;
+      padding: 10px;
+  }
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+      display: block;
+  }
+
+  /* Style the buttons */
+  .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+  }
+
+  .btn:hover {
+      background-color: #ddd;
+  }
+
+  .btn.active {
+      background-color: #666;
+      color: white;
+  }
+</style>
+
+<!-- Page Header Start -->
+<div class="page-header parallaxie">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <!-- Page Header Box Start -->
+              <div class="page-header-box">
+                  <h1 class="text-anime-style-3" data-cursor="-opaque">Gallery</h1>
+                  <nav class="wow fadeInUp">
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="/">home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                      </ol>
+                  </nav>
+              </div>
+              <!-- Page Header Box End -->
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Page Service Start -->
+<div class="page-service">
+  <div class="container">
+      <div class="row section-row">
+          <div class="col-lg-12">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                  <h3 class="wow fadeInUp">our gallery</h3>
+                  <!-- <h2 class="text-anime-style-3" data-cursor="-opaque">Our construction services</h2>
+                      <p class="wow fadeInUp" data-wow-delay="0.25s">We specialize in a wide range of construction services, including residential, commercial, and industrial projects.</p> -->
+              </div>
+              <!-- Section Title End -->
+          </div>
+      </div>
+
+
+      <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('engineering')"> Engineering</button>
+          <button class="btn" onclick="filterSelection('manpower')"> Manpower</button>
+          <button class="btn" onclick="filterSelection('marine')"> Marine</button>
+          <button class="btn" onclick="filterSelection('procurement')"> Procurement</button>
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+          <div class="col-lg-3 col-md-6 column engineering">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/12.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column engineering">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/13.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column engineering">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/14.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column engineering">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/15.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column engineering">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/16.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column manpower">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/service-img-1.jpg" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column manpower">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/service-img-2.jpg" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column manpower">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/service-img-3.jpg" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column manpower">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/service-img-4.jpg" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column manpower">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/service-img-5.jpg" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column manpower">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/service-img-6.jpg" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column marine">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/1.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column marine">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/2.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column marine">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/3.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column marine">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/4.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column procurement">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/5.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column procurement">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/6.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column procurement">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/7.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column procurement">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/8.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column procurement">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/9.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column procurement">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/10.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6 column procurement">
+              <!-- Service Item Start -->
+              <div class="service-item" data-wow-delay="0.25s">
+                  <!-- Service Image Start -->
+                  <div class="service-image" data-cursor-text="View">
+                      <a href="#">
+                          <figure>
+                              <img src="assets/images/services/11.png" alt="">
+                          </figure>
+                      </a>
+                  </div>
+                  <!-- Service Image End -->
+
+              </div>
+              <!-- Service Item End -->
+          </div>
+
+
+          <!-- END GRID -->
+      </div>
+
+  </div>
+</div>
+<!-- Page Service End -->
+
+
+<?php @include ('sections/cta.oracus.php') ?>
+
+<?php @include ('sections/contact.oracus.php') ?>
+
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+  }
+
+  function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+  }
+
+  function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+      }
+      element.className = arr1.join(" ");
+  }
+
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+      });
+  }
+</script>
