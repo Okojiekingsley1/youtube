@@ -25,6 +25,14 @@
 
 <!-- AOS JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- CountUp.js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+
 <!-- count up ends -->
 
 
@@ -201,12 +209,51 @@
                   </div>
 
                   <!-- Company Experience Box Start -->
-                  <div class="company-experience position-absolute p-3 rounded bg-white shadow" style="bottom: -20px; left: 20px; width: 150px;">
-                      <div class="company-experience-content text-center">
-                          <h3 class="text-success mb-0"><span class="counter">25</span>+</h3>
-                          <p class="text-muted small text-uppercase mb-0">Years of Experience</p>
-                      </div>
+                  <div class="company-experience position-absolute p-3 rounded bg-white shadow" style="bottom: -20px; left: 20px; width: 150px;" data-aos="fade-up">
+                    <div class="company-experience-content text-center" data-aos="fade-up">
+                      <h3 class="text-success mb-0"><span id="experienceCount" class="counter">25</span>+</h3>
+                      <p class="text-muted small text-uppercase mb-0">Years of Experience</p>
                   </div>
+                  
+                  </div>
+
+                  <script>
+                    // Initialize AOS
+                    AOS.init();
+                    AOS.init({
+  duration: 1000,
+  once: true
+});
+                  
+                    // CountUp functionality
+                    document.addEventListener('DOMContentLoaded', function() {
+                        let experienceCountStarted = false;
+                  
+                        window.addEventListener('scroll', function() {
+                            const experienceCountElement = document.getElementById('experienceCount');
+                            const rect = experienceCountElement.getBoundingClientRect();
+                  
+                            if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+                                if (!experienceCountStarted) {
+                                    const experienceCount = new CountUp('experienceCount', 25, {
+                                        duration: 2,
+                                        useEasing: true,
+                                        useGrouping: true,
+                                        separator: ',',
+                                        decimal: '.',
+                                    });
+                                    if (!experienceCount.error) {
+                                        experienceCount.start();
+                                        experienceCountStarted = true;
+                                    } else {
+                                        console.error(experienceCount.error);
+                                    }
+                                }
+                            }
+                        });
+                    });
+                  </script>
+                  
                   <!-- Company Experience Box End -->
               </div>
               <!-- Company History Image End -->
@@ -233,6 +280,8 @@
       </div>
   </div>
 </div>
+
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -615,8 +664,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-
-
 
 
 
