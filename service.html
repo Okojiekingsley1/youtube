@@ -1,110 +1,131 @@
-<style>
-  * {
-      box-sizing: border-box;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- favicon -->
+   <link rel="icon" type="asset/icon" href="about.css">
 
-  body {
-      background-color: #f1f1f1;
-      padding: 20px;
-      font-family: Arial;
-  }
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- AOS css -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<!-- count up 25yrs -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
 
-  /* Center website */
-  .main {
-      max-width: 1000px;
-      margin: auto;
-  }
+   <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  h1 {
-      font-size: 50px;
-      word-break: break-all;
-  }
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-  .row {
-      margin: 10px -16px;
-  }
+<!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-  /* Add padding BETWEEN each column */
-  .row,
-  .row>.column {
-      padding: 8px;
-  }
+<!-- CountUp.js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
 
-  /* Create three equal columns that floats next to each other */
-  .column {
-      float: left;
-      width: 50%;
-      display: none;
-      /* Hide all elements by default */
-  }
+<!-- count up ends -->
 
-  @media only screen and (max-width: 600px) {
-      .column {
-          float: left;
-          width: 100%;
-          display: none;
-          /* Hide all elements by default */
-      }
-  }
 
-  @media only screen and (min-width: 992px) {
-      .column {
-          float: left;
-          width: 25%;
-          display: none;
-          /* Hide all elements by default */
-      }
-  }
+</head>
+<body>
+        
+      <section>
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="asset/serv1.png" class="img-fluid" alt="Brand Logo">
+            </a> 
+            <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" href="index.html
+                  ">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About Us
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about.html#about">Who We Are</a></li>
+                    <li><a class="dropdown-item" href="#">Management Team</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html#faq">FAQ</a></li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Products & Services 
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#infrastructure">Infrastructure</a></li>
+                    <li><a class="dropdown-item" href="#data">Data Center</a></li>
+                    <li><a class="dropdown-item" href="#server">Servers</a></li>
+                    <li><a class="dropdown-item" href="#database">Database</a></li>
+                    <li><a class="dropdown-item" href="#cybersecurity">Cybersecurity</a></li>
+                    <li><a class="dropdown-item" href="#surveillance">Surveillance Projects</a></li>
+                    <li><a class="dropdown-item" href="#robotics">Robotics and Artificial Intelligence</a></li>
+                    <li><a class="dropdown-item" href="#erp">ERP's</a></li>
+                    <li><a class="dropdown-item" href="#application">Application</a></li>
+                    <li><a class="dropdown-item" href="#engineered">Engineered Systems</a></li>
+                    <li><a class="dropdown-item" href="#cloud">Cloud Services</a></li>
+                    <li><a class="dropdown-item" href="#software">Software Development</a></li>
+                    <li><a class="dropdown-item" href="#advance">Advanced Data Analytics</a></li>
+                    <li><a class="dropdown-item" href="#digital">Digital Transformation</a></li>
+                    <li><a class="dropdown-item" href="#virtualization">Virtualization</a></li>
+                    <li><a class="dropdown-item" href="#lms">Learning Management System</a></li>
+                    <li><a class="dropdown-item" href="#igr">IGR Manager</a></li>
+                    <li><a class="dropdown-item" href="#">IT Security Solution</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Business Consulting and Professional Services</a></li>
+                  </ul>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link active text-white" href="#">Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-2 mt-lg-0" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
 
-  /* Clear floats after rows */
-  .row:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
 
-  /* Content */
-  .content {
-      background-color: white;
-      padding: 10px;
-  }
+<!-- Page Header End -->
 
-  /* The "show" class is added to the filtered elements */
-  .show {
-      display: block;
-  }
-
-  /* Style the buttons */
-  .btn {
-      border: none;
-      outline: none;
-      padding: 12px 16px;
-      background-color: white;
-      cursor: pointer;
-  }
-
-  .btn:hover {
-      background-color: #ddd;
-  }
-
-  .btn.active {
-      background-color: #666;
-      color: white;
-  }
-</style>
-
-<!-- Page Header Start -->
 <div class="page-header parallaxie">
   <div class="container">
       <div class="row">
           <div class="col-lg-12">
               <!-- Page Header Box Start -->
-              <div class="page-header-box">
-                  <h1 class="text-anime-style-3" data-cursor="-opaque">Gallery</h1>
+              <div class="page-header-box" data-aos="fade-in">
+                  <h1 class="text-anime-style-3" data-cursor="-opaque">Product & Services</h1>
                   <nav class="wow fadeInUp">
                       <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="/">home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                          <li class="breadcrumb-item active" aria-current="page">product & services</li>
                       </ol>
                   </nav>
               </div>
@@ -113,442 +134,456 @@
       </div>
   </div>
 </div>
-<!-- Page Header End -->
+  
 
-<!-- Page Service Start -->
-<div class="page-service">
+
+<!-- Services Section Start -->
+<div class="services-section">
   <div class="container">
-      <div class="row section-row">
-          <div class="col-lg-12">
-              <!-- Section Title Start -->
-              <div class="section-title">
-                  <h3 class="wow fadeInUp">our gallery</h3>
-                  <!-- <h2 class="text-anime-style-3" data-cursor="-opaque">Our construction services</h2>
-                      <p class="wow fadeInUp" data-wow-delay="0.25s">We specialize in a wide range of construction services, including residential, commercial, and industrial projects.</p> -->
-              </div>
-              <!-- Section Title End -->
-          </div>
-      </div>
-
-
-      <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('engineering')"> Engineering</button>
-          <button class="btn" onclick="filterSelection('manpower')"> Manpower</button>
-          <button class="btn" onclick="filterSelection('marine')"> Marine</button>
-          <button class="btn" onclick="filterSelection('procurement')"> Procurement</button>
-      </div>
-
-      <!-- Portfolio Gallery Grid -->
       <div class="row">
-          <div class="col-lg-3 col-md-6 column engineering">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/12.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
+          <!-- Section Title -->
+          <div class="col-12">
+              <div class="section-title text-center" data-aos="fade-up">
+                  <h2>Our IT Services</h2>
+                  <p class="lead">We design, implement and manage services and solutions across all the verticals(public sector,maufacturing,health care,oil and gas,financial services,telecommunication, small and medium-sized companies.)</p>
               </div>
-              <!-- Service Item End -->
           </div>
-          <div class="col-lg-3 col-md-6 column engineering">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/13.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column engineering">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/14.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column engineering">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/15.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column engineering">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/16.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column manpower">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/service-img-1.jpg" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column manpower">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/service-img-2.jpg" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column manpower">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/service-img-3.jpg" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column manpower">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/service-img-4.jpg" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column manpower">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/service-img-5.jpg" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column manpower">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/service-img-6.jpg" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column marine">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/1.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column marine">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/2.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column marine">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/3.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column marine">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/4.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column procurement">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/5.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column procurement">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/6.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column procurement">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/7.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column procurement">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/8.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column procurement">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/9.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column procurement">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/10.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-          <div class="col-lg-3 col-md-6 column procurement">
-              <!-- Service Item Start -->
-              <div class="service-item" data-wow-delay="0.25s">
-                  <!-- Service Image Start -->
-                  <div class="service-image" data-cursor-text="View">
-                      <a href="#">
-                          <figure>
-                              <img src="assets/images/services/11.png" alt="">
-                          </figure>
-                      </a>
-                  </div>
-                  <!-- Service Image End -->
-
-              </div>
-              <!-- Service Item End -->
-          </div>
-
-
-          <!-- END GRID -->
       </div>
+      <div class="row g-4">
+          <!-- Service Item 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item">
+                  <div class="service-icon">
+                      <i class="fas fa-cloud"></i>
+                  </div>
+                  <h4 class="service-title">Cloud Computing</h4>
+                  <p class="service-description">Scalable and secure cloud solutions to drive your business forward.</p>
+              </div>
+          </div>
+          <!-- Service Item 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item">
+                  <div class="service-icon">
+                      <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h4 class="service-title">Cybersecurity</h4>
+                  <p class="service-description">Protect your data and IT infrastructure with our advanced security services.</p>
+              </div>
+          </div>
+          <!-- Service Item 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item">
+                  <div class="service-icon">
+                      <i class="fas fa-code"></i>
+                  </div>
+                  <h4 class="service-title">Software Development</h4>
+                  <p class="service-description">Custom software solutions tailored to your business needs.</p>
+              </div>
+          </div>
+          <!-- Service Item 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item">
+                  <div class="service-icon">
+                      <i class="fas fa-network-wired"></i>
+                  </div>
+                  <h4 class="service-title">Networking Solutions</h4>
+                  <p class="service-description">Reliable networking services to ensure seamless communication and operations.</p>
+              </div>
+          </div>
+          <!-- Service Item 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item">
+                  <div class="service-icon">
+                      <i class="fas fa-cogs"></i>
+                  </div>
+                  <h4 class="service-title">IT Consultancy</h4>
+                  <p class="service-description">Expert IT consultancy to help you make informed decisions and optimize your IT strategy.</p>
+              </div>
+          </div>
+          <!-- Service Item 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item">
+                  <div class="service-icon">
+                      <i class="fas fa-database"></i>
+                  </div>
+                  <h4 class="service-title">Data Management</h4>
+                  <p class="service-description">Comprehensive data management services to keep your information safe and accessible.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+<!-- Services Section End -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+
+<!--  -->
+
+
+<div class="container py-5">
+  <div class="row mb-4">
+      <div class="col text-center">
+          <h2 class="display-5 fw-bold">Our Services</h2>
+          <p class="text-muted">Delivering cutting-edge solutions tailored to your needs.</p>
+      </div>
+  </div>
+  <div class="row gy-4">
+      <!-- Service 1: Cloud Computing -->
+      <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm" data-aos="fade-up" id="data">
+              <img src="asset/data.webp" class="card-img-top" alt="Cloud Computing">
+              <div class="card-body" data-aos="fade-left">
+                  <h5 class="card-title">Data Center</h5>
+                  <p class="card-text">Our state-of-the-art data center provides secure,reliable and scalable infrastructure for your IT operations. We offer:<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>colocation and hosting<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>data center migration and consolidation<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>data center infrastructure management<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>data center security and compliance
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!-- Service 2: Cybersecurity -->
+      <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm" data-aos="fade-up" id="cybersecurity">
+              <img src="asset/cyber.jpg" class="card-img-top" alt="Cybersecurity">
+              <div class="card-body" data-aos="fade-left">
+                  <h5 class="card-title">Cybersecurity</h5>
+                  <p class="card-text">Safeguard your digital asset with our comprehensive IT security offerings,including:<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Application security<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Data Security and Encryption<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Network Security<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Security Information and Event Management<br> 
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Authentication Solutions
+                    
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!-- Service 3: IT Consulting -->
+      <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm" data-aos="fade-up" id="cloud">
+              <img src="asset/infrastructure.jpg" class="card-img-top" alt="IT Consulting">
+              <div class="card-body" data-aos="fade-left">
+                  <h5 class="card-title">Cloud Services</h5>
+                  <p class="card-text">Our cloud consulting services helps you harness the power of cloud technology to drive growth business and innovation. We provide:<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Cloud strategy and migration<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Cloud security and compliance<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Compliance optimisation and cost management<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Cloud architecture and design
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!-- Service 4: Software Development -->
+      <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm" data-aos="fade-up" id="software">
+              <img src="asset/software.jpeg" class="card-img-top" alt="Software Development">
+              <div class="card-body" data-aos="fade-left">
+                  <h5 class="card-title">Software Development</h5>
+                  <p class="card-text">Enhance your business capabilities with our software services. From off-the-shelf solutions to custom software development, we offer a wide range of software solutions tailored to your specific need. We help you select,implement and manage the right software solutions for your business. We provide:<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Software consulting and selection<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Software implementation and integration<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Software management and support<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Software development and customization
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!-- Service 5: Network Solutions -->
+      <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm" data-aos="fade-up" id="digital">
+              <img src="asset/engineeered.jpg" class="card-img-top" alt="Network Solutions">
+              <div class="card-body" data-aos="fade-left">
+                  <h5 class="card-title">Digital Transformation</h5>
+                  <p class="card-text">Embrace the future of technology with out digital transformation solutions. We'll help you leverage the latest innovation to optimize process,enhance customer experience and stay ahead of the competition. We provide:<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Digital startegy and roadmap<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Business process automation<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Digital product development<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Change management and adoption
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!-- Service 6: Managed IT Services -->
+      <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm" data-aos="fade-up" id="igr">
+              <img src="asset/igr.png" class="card-img-top" alt="Managed IT Services">
+              <div class="card-body" data-aos="fade-left">
+                  <h5 class="card-title">IGR Manager</h5>
+                  <p class="card-text">Our managed IT services provide proactive support, monitoring, and maintenance to keep your systems running smoothly.<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Access management <br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Basic information capturing<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Electronic payment tax card<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Tax assessment(direct and payee including batch tax assessment)<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Revenue collection<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Assignment to ministries and agencies<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Payment(e-payment using electronic tax card)<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Revenue projection(forecasting for budgeting)<br>
+                    <i class="bi bi-check-circle-fill p-2 text-success"></i>Report generation 
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Service 7: Managed IT Services -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm" data-aos="fade-up" id="virtualization">
+            <img src="asset/software.jpeg" class="card-img-top" alt="Software Development">
+            <div class="card-body" data-aos="fade-left">
+                <h5 class="card-title">Virtualization</h5>
+                <p class="card-text">Our software development team creates custom applications tailored to your specific needs. From design to deployment, we deliver solutions that drive business success. Whether you're consolidating servers,building private clouds or Virtualizing desktop.</p>
+            </div> 
+        </div>
+    </div>
+    <!-- Service 8: Network Solutions -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm" data-aos="fade-up" id="engineered">
+            <img src="asset/engineeered.jpg" class="card-img-top" alt="Network Solutions">
+            <div class="card-body" data-aos="fade-left">
+                <h5 class="card-title">Engineered System</h5>
+                <p class="card-text">Optimize performance and streamline operations with our engineered systems. From converged infrastructure to integrated appliances,we offer pre-configured solutions designed to simplify deployment and management.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Service 9: Managed IT Services -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm" data-aos="fade-up" id="application">
+            <img src="asset/application.jpeg" class="card-img-top" alt="Managed IT Services">
+            <div class="card-body" data-aos="fade-left">
+                <h5 class="card-title">Applications</h5>
+                <p class="card-text">Drive productivity and innovation with our custom application developnent and deloyment service<br>
+                  <i class="bi bi-check-circle-fill p-2 text-success"></i>Application development and deployment <br>
+                  <i class="bi bi-check-circle-fill p-2 text-success"></i>Application management and monitoring <br>
+                  <i class="bi bi-check-circle-fill p-2 text-success"></i>Application security and compliance<br>
+                  <i class="bi bi-check-circle-fill p-2 text-success"></i>Application migration and modernization
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service 10: Managed IT Services -->
+     <div class="col-lg-4 col-md-6">
+      <div class="card h-100 shadow-sm" data-aos="fade-up" id="database">
+          <img src="asset/software.jpeg" class="card-img-top" alt="Software Development">
+          <div class="card-body" data-aos="fade-left">
+              <h5 class="card-title">Database</h5>
+              <p class="card-text">Our database services ensure your databases are secure,efficient and scalable.<br>
+                <i class="bi bi-check-circle-fill p-2 text-success"></i>Database design and implementation<br>
+                <i class="bi bi-check-circle-fill p-2 text-success"></i>Database management and monitoring<br>
+                <i class="bi bi-check-circle-fill p-2 text-success"></i>Database security and compliance<br>
+                <i class="bi bi-check-circle-fill p-2 text-success"></i>Database migration and deployment 
+              </p>
+          </div>
+      </div>
+  </div>
+  <!-- Service 11: Network Solutions -->
+  <div class="col-lg-4 col-md-6">
+      <div class="card h-100 shadow-sm" data-aos="fade-up" id="server">
+          <img src="asset/sever.jpg" class="card-img-top" alt="Network Solutions">
+          <div class="card-body" data-aos="fade-left">
+              <h5 class="card-title">Servers</h5>
+              <p class="card-text">Power your business-critical application with our high-performance server solution. From entry-level servers to enterprise-grade system. We provide:<br>
+                <i class="bi bi-check-circle-fill p-2 text-success"></i>Server management and monitoring<br>
+                <i class="bi bi-check-circle-fill p-2 text-success"></i>Server virtualization and consolidation<br>
+                <i class="bi bi-check-circle-fill p-2 text-success"></i>Server security and compliance<br>
+                <i class="bi bi-check-circle-fill p-2 text-success"></i>Server migration and deployment
+              </p>
+          </div>
+      </div>
+  </div>
+  <!-- Service 12: Managed IT Services -->
+  <div class="col-lg-4 col-md-6">
+      <div class="card h-100 shadow-sm" data-aos="fade-up" id="erp">
+          <img src="asset/erp.jpg" class="card-img-top" alt="Managed IT Services">
+          <div class="card-body" data-aos="fade-left">
+              <h5 class="card-title">ERP's (Enterprise Resource Planning)</h5>
+              <p class="card-text">Streamline your business processes and improve operational efficiency with our ERP solutions. From finance and accounting to supply chain management and human resources. Our integrated ERP system provides a centralized platform to manage all aspects of your organisation with real-time insight and automation capabilities. We help you make informed decisions and drive business growth</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Service 13: Managed IT Services -->
+  <div class="col-lg-4 col-md-6">
+    <div class="card h-100 shadow-sm" data-aos="fade-up" id="lms">
+        <img src="asset/software.jpeg" class="card-img-top" alt="Software Development">
+        <div class="card-body" data-aos="fade-left>
+            <h5 class="card-title">Learning Manangement System (LMS)</h5>
+            <p class="card-text">Learning management system (LMS) streamline your training processes and empower your workforce with our intuitive LMS platform delivering training content to your employees,customers or partners:<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i>Course management and delivery<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i>User management and authentication<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i>Assessment and evaluation tools<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i>Reporting and analytics
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Service 14: Network Solutions -->
+<div class="col-lg-4 col-md-6">
+    <div class="card h-100 shadow-sm" data-aos="fade-up" id="advanced">
+        <img src="asset/advanceddata.jpg" class="card-img-top" alt="Network Solutions">
+        <div class="card-body" data-aos="fade-left">
+            <h5 class="card-title">Advanced Data Analytics</h5>
+            <p class="card-text">Unlock the potential of your data with our advanced analytics solution. We empower you to make data-driven decisions that drives business growth. Our services include:<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i>Predictive modeling and machine learning<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i>Data visualization and reporting<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i>Big data solutions and architecture
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Service 15: Managed IT Services -->
+<div class="col-lg-4 col-md-6">
+    <div class="card h-100 shadow-sm" data-aos="fade-up" id="surveillance">
+        <img src="asset/surveillance.png" class="card-img-top" alt="Managed IT Services">
+        <div class="card-body" data-aos="fade-left">
+            <h5 class="card-title">Surveillance Products</h5>
+            <p class="card-text">
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Surveillance Cameras:</b> Enhance security with real-time monitoring,access control system,manage entry permissions efficiently.<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Speed Gates & Turnstiles:</b> Enhance access management.<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Security Alarm System:</b> Reliable intrusion detection.<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Fire Alarm Sytem:</b> Swift fire detection and evacuation.<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Display and Control System:</b> Streamline monitoring and management of security systems.<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Intelligent Traffic Sytem:</b> Optimize traffic flow and safety.<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Onboarding System:</b> Streamline employee onboarding processes.<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Security Inspection:</b> Ensure thorough security checks.<br>
+              <i class="bi bi-check-circle-fill p-2 text-success"></i><b>Audio and Sensing System:</b> Enhance situational awareness.<br>
+            </p>
+        </div>
+    </div>
+</div>
+
 
   </div>
 </div>
-<!-- Page Service End -->
 
 
-<?php @include ('sections/cta.oracus.php') ?>
-
-<?php @include ('sections/contact.oracus.php') ?>
+<!-- get in touch-->
+<div class="container my-5" data-aos="fade-up" data-aos-delay="100" id="contact">
+  <h2 class="text-center mb-4">Get in Touch with Us</h2>
+  <form id="contactForm">
+      <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Send Message</button>
+  </form>
+</div>
 
 <script>
-  filterSelection("all")
-  function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("column");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-      }
-  }
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
 
-  function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-      }
-  }
+      // Get the user's input
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var message = document.getElementById('message').value;
 
-  function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-      }
-      element.className = arr1.join(" ");
-  }
+      // Encode the message for the WhatsApp URL
+      var whatsappMessage = encodeURIComponent(
+          'Name: ' + name + '\n' +
+          'Email: ' + email + '\n' +
+          'Phone: ' + phone + '\n' +
+          'Message: ' + message
+      );
 
+      // Replace 'YOUR_PHONE_NUMBER' with your actual WhatsApp number (in international format without '+' e.g., 2348012345678)
+      var whatsappURL = 'https://wa.me/YOUR_PHONE_NUMBER?text=' + whatsappMessage;
 
-  // Add active class to the current button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-      });
-  }
+      // Redirect to WhatsApp
+      window.open(whatsappURL, '_blank');
+  });
 </script>
+
+
+<!-- footer -->
+<footer>
+  <div class="container-fluid border border-black bg-black">
+    <div class="row text-center">
+
+      <div class="col-md-5">
+        <div class="fs-4 text-white mb-3">Contact Us</div>
+        <div class="fs-6 text-wrap px-4 text-white mb-3"><i class="bi bi-geo-alt fs-6 p-2" style="color: green;"></i> Banex Mall,4a Akiogun Street,Oniru,Lagos. &  4c Idowu Martins Street, Victoria Island, Lagos 
+        </div>
+
+        <div class="fs-6 text-wrap px-4 text-white mb-4"><i class="bi bi-geo-alt fs-6 p-2" style="color: green;"></i>5th Floor Nigeria National Merit Award (NNMA), House 22 Aguiyi Ironsi Street, Maitama 904101, Abuja
+        </div>
+        
+        <!-- <div class="text-center p-4">
+          <a href="service.html" class="btn btn-light w-50" style="background-color: green; color: white; border: none;">View Our Services</a>
+        </div> -->
+        <i class="bi bi-whatsapp fs-3 p-2" style="color: green;"></i>
+        <i class="bi bi-facebook fs-3 p-2" style="color: green;"></i>
+        <i class="bi bi-linkedin fs-3 p-2" style="color: green;"></i>
+        <i class="bi bi-instagram fs-3 p-2" style="color: green;"></i>
+        <i class="bi bi-twitter-x fs-3 p-2" style="color: green;"></i>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="fs-4 text-white">Company</div>
+          
+
+          <div class="text-center p-4">
+            <a href="service.html" class="btn btn-light w-50 mb-2" style="background-color: green; color: white; border: none;">Home</a>
+
+            <a href="about.html" class="btn btn-light w-50 mb-2" style="background-color: green; color: white; border: none;">About Us</a>
+
+            <a href="contact.html" class="btn btn-light w-50 mb-2"style="background-color: green; color: white; border: none;" >Services</a>
+
+            <a href="order.html" class="btn btn-light w-50 mb-2" style="background-color: green; color: white; border: none;">Partners</a>
+          </div>
+          </div>
+
+          
+          
+
+
+
+          <div class="col-md-3">
+            <div class="fs-4 text-white">Community</div>
+            <div class="text-center p-4">
+              <a href="service.html" class="btn btn-light w-50 mb-2" style="background-color: green; color: white; border: none;">News</a>
+
+              <a href="service.html" class="btn btn-light w-50 mb-2" style="background-color: green; color: white; border: none;">Blogs</a>
+
+              <a href="service.html" class="btn btn-light w-50 mb-2" style="background-color: green; color: white; border: none;">Security</a>
+
+              <a href="service.html" class="btn btn-light w-50 mb-2" style="background-color: green; color: white; border: none;">Contact Us</a>
+            
+
+    </div>
+  </div>
+  
+
+
+
+  <div class="col-md-12 border-top border-top-dark">
+    <div class="fs-6 text-white">Copyright<i class="bi bi-c-circle"></i>2024 Servercrib.   Powered by <a href="tel:+2348050626974" style="color: green;">Team Conept.</a></div>
+    </div>
+  </footer>
+</body>
+</html>
