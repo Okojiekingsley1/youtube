@@ -8,7 +8,10 @@ html{
   scroll-behavior: smooth;
 }
 
-
+.divide{
+  align-items: center;
+	justify-content: space-evenly;
+}
 
 
         /* @media (min-width: 992px){
